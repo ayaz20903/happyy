@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- page title -->
-    <title>Nogor - Transportation & Logistics HTML Template</title>
+    <title>Happyy - The Super App for UAE</title>
 
     <!-- favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.png" />
@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="assets/css/remixicon.css" />
     <link rel="stylesheet" href="assets/css/slick.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
   </head>
 
   <body>
@@ -152,24 +155,12 @@
 
     <main class="main">
       <!-- hero area starts -->
-      <section
-        class="hero-area"
-      >
-
-      <!-- <section
-        class="hero-area"
-      > -->
+      <section class="hero-area">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-5">
               <div class="hero-content">
                 <div class="section-top">
-                  <!-- <span class="sub-title white-color">Safe Logistic</span> -->
-                  <!-- <span>
-                    <h1 class="title white-color mt-20">The Super App for</h1>
-                    <img src="assets/images/uae-icon-1.png" />
-                  </span> -->
-
                   <h1 class="title white-color mt-20">
                     The Super App<br />
                     for
@@ -203,96 +194,59 @@
             <div class="col-lg-7">
               <div class="hero-image">
                 <video
-                src="assets/videos/herovideo111.webm"
-                class="hero-image-1"
-                autoplay
-                muted
-                loop
-                playsinline
-              ></video
+                  src="assets/videos/herovideo111.webm"
+                  class="hero-image-1"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                ></video>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- about area starts -->
-      <section class="about-area py-120">
+      <!-- <section class="phone-scroll premium-section">
+        <div class="phone-wrapper">
+          <div class="text-wrapper">
+            <div class="text-scroll">Send money home instantly</div>
+            <div class="text-scroll">Pay bills in seconds</div>
+            <div class="text-scroll">Support loved ones easily</div>
+            <div class="text-scroll">Everything in one app</div>
+          </div>
+
+          <img src="assets/images/screen1.png" class="phone" />
+        </div>
+      </section> -->
+
+      <!-- <section class="hero-area reveal-from-bottom ">
         <div class="container">
-          <div class="row gx-xl-5 align-items-center">
-            <div class="col-lg-6 wow fadeInLeft" data-wow-delay=".2s">
-              <div class="about-images">
-                <img
-                  src="assets/images/screen1.png"
-                  alt="about"
-                  class="about-image-1"
-                />
-                <img
-                  src="assets/images/about-2.png"
-                  alt="about"
-                  class="about-image-2 d-none"
-                />
-                <div class="devilery-text d-none">
-                  <img src="assets/images/mobile-app.png" alt="icon" />
-                  <h5 class="title">One Super App</h5>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6 wow fadeInRight" data-wow-delay=".2s">
-              <div class="about-content">
+          <div class="row align-items-center">
+            <div class="col-lg-5">
+              <div class="hero-content">
                 <div class="section-top">
-                  <span class="sub-title d-none">About us</span>
-                  <h3 class="title mt-10">
-                    <!-- <span>Seamless logistics</span> for your business needs -->
-                    Your Daily Services
-                  </h3>
-                  <h1>Simplified</h1>
-                </div>
-                <p class="mt-20">
-                  Our Super App brings together essential digital services in
-                  one platform, making everyday life in the UAE easier and more
-                  connected. No need for multiple apps — manage everything in
-                  one place.
-                </p>
-
-                <div class="about-items mt-30 d-none">
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="about-item">
-                        <h6 class="title">Seamless Supply Chain</h6>
-                        <div class="d-flex align-items-center gap-3 mt-20">
-                          <img src="assets/images/icon-3.png" alt="icon" />
-                          <span>Logistic an implemen control efficient</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="about-item">
-                        <h6 class="title">Reliable Distribution</h6>
-                        <div class="d-flex align-items-center gap-3 mt-20">
-                          <img src="assets/images/icon-4.png" alt="icon" />
-                          <span>Logistic an implemen control efficient</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="devilery-text">
-                  <img src="assets/images/mobile-app.png" alt="icon" />
-                  <h5 class="title">One Super App</h5>
+                  <h1 class="title white-color mt-20">
+                    The Super App<br />
+                    for
+                    <img
+                      src="assets/images/uae-icon-1.png"
+                      alt="UAE"
+                      class="d-inline-block uae-text"
+                    />
+                  </h1>
                 </div>
 
                 <div class="button-group mt-30">
-                  <a href="about.html" class="primary-btn"
-                    ><span class="text">Download Now</span>
+                  <a href="about.html" class="primary-btn secondary-bg"
+                    ><span class="text">Download App</span>
                     <span class="icon"
-                      ><i class="ri-arrow-right-double-line"></i></span
-                  ></a>
+                      ><i class="ri-arrow-right-double-line"></i
+                    ></span>
+                  </a>
 
-                  <div class="phone-text d-none">
-                    <img src="assets/images/icon-5.png" alt="icon" />
+                  <div class="phone-text white-color d-none">
+                    <img src="assets/images/icon-1.png" alt="icon" />
                     <div class="text-part">
                       <span>Need Help?</span>
                       <h5 class="title"><a href="#">(307) 555-0133</a></h5>
@@ -301,152 +255,198 @@
                 </div>
               </div>
             </div>
+
+            <div class="hero-image">
+              <video
+                src="assets/videos/herovideo111.webm"
+                class="hero-image-1"
+                autoplay
+                muted
+                loop
+                playsinline
+              ></video>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- about area starts -->
+      <!-- <div class="premium-section"> -->
+      <section class="about-area py-120 premium-section">
+        <div class="container">
+          <div class="row gx-xl-5 align-items-center">
+            <div class="col-lg-7 wow fadeInLeft" data-wow-delay=".2s">
+              <div class="about-images">
+                <img
+                  src="assets/images/screen1.png"
+                  class="app-screen active"
+                />
+                <img src="assets/images/screen2.png" class="app-screen" />
+                <img src="assets/images/screen1.png" class="app-screen" />
+              </div>
+            </div>
+
+            <div class="col-lg-5 wow fadeInRight" data-wow-delay=".2s">
+              <div class="about-content">
+                <div class="content-step step active">
+                  <div class="section-top">
+                    <h3 class="title mt-10">Everything You Need,</h3>
+                    <h1>One App Away.</h1>
+                  </div>
+                </div>
+
+                <div class="content-step step">
+                  <div class="section-top">
+                    <h3 class="title mt-10">Everything You Need,</h3>
+                    <h1>One App Away.</h1>
+
+                    <p class="mt-20 text-black">
+                      Our Super App brings together essential digital services
+                      in one platform, making everyday life in the UAE easier
+                      and more connected. No need for multiple apps — manage
+                      everything in one place.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="content-step step">
+                  <div class="section-top">
+                    <h3 class="title mt-10">Everything You Need,</h3>
+                    <h1>One App Away.</h1>
+                  </div>
+                  <p class="mt-20">
+                    Our Super App brings together essential digital services in
+                    one platform, making everyday life in the UAE easier and
+                    more connected. No need for multiple apps — manage
+                    everything in one place.
+                  </p>
+
+                  <div class="devilery-text">
+                    <img src="assets/images/mobile-app.png" alt="icon" />
+                    <h5 class="title">One Super App</h5>
+                  </div>
+
+                  <div class="button-group mt-30">
+                    <a href="about.html" class="primary-btn"
+                      ><span class="text">Download Now</span>
+                      <span class="icon"
+                        ><i class="ri-arrow-right-double-line"></i></span
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="service-area py-120">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="section-top">
-                <!-- <span class="sub-title">latest service</span> -->
-                <h3 class="title mt-10">
-                  <span> All Services in</span> One Super App
-                </h3>
-              </div>
-            </div>
-          </div>
-
-          <div class="service-slider mt-50">
-            <div class="single-service">
-              <div
-                class="d-flex justify-content-between align-items-center mb-30"
-              >
-                <div class="main-icon">
-                  <img src="assets/images/icon-10.png" alt="icon" />
+      <div class="service-area-wrapper">
+        <section class="service-area py-120">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="section-top">
+                  <!-- <span class="sub-title">latest service</span> -->
+                  <h3 class="title mt-10">
+                    <span> All Services in</span> One Super App
+                  </h3>
                 </div>
-                <span class="number">01</span>
               </div>
-              <h5 class="title">
-                <a href="service-details.html"
-                  >Mobile Top-ups & Data Bundles
-                </a>
-              </h5>
-              <p class="mt-10 d-none">
-                Logistic service involves of implementation and control of the
-                efficient
-              </p>
-              <a href="service-details.html" class="primary-btn mt-20"
-                ><span class="text">Explore more</span>
-                <span class="icon"
-                  ><i class="ri-arrow-right-double-line"></i></span
-              ></a>
             </div>
 
-            <div class="single-service">
-              <div
-                class="d-flex justify-content-between align-items-center mb-30"
-              >
-                <div class="main-icon">
-                  <img src="assets/images/icon-13.png" alt="icon" />
-                </div>
-                <span class="number">02</span>
-              </div>
-              <h5 class="title">
-                <a href="service-details.html">Bills Payments</a>
-              </h5>
-              <p class="mt-10 d-none">
-                Logistic service involves of implementation and control of the
-                efficient
-              </p>
-              <a href="service-details.html" class="primary-btn mt-20"
-                ><span class="text">Explore more</span>
-                <span class="icon"
-                  ><i class="ri-arrow-right-double-line"></i></span
-              ></a>
-            </div>
-
-            <div class="single-service">
-              <div
-                class="d-flex justify-content-between align-items-center mb-30"
-              >
-                <div class="main-icon">
-                  <img src="assets/images/icon-11.png" alt="icon" />
-                </div>
-                <span class="number">03</span>
-              </div>
-              <h5 class="title">
-                <a href="service-details.html">Branded Gift Cards & Vouchers</a>
-              </h5>
-              <p class="mt-10 d-none">
-                Logistic service involves of implementation and control of the
-                efficient
-              </p>
-              <a href="service-details.html" class="primary-btn mt-20"
-                ><span class="text">Explore more</span>
-                <span class="icon"
-                  ><i class="ri-arrow-right-double-line"></i></span
-              ></a>
-            </div>
-
-            <div class="single-service">
-              <div
-                class="d-flex justify-content-between align-items-center mb-30"
-              >
-                <div class="main-icon">
-                  <img src="assets/images/icon-12.png" alt="icon" />
-                </div>
-                <span class="number">04</span>
-              </div>
-              <h5 class="title">
-                <a href="service-details.html">Calling Cards </a>
-              </h5>
-              <p class="mt-10 d-none">
-                Logistic service involves of implementation and control of the
-                efficient
-              </p>
-              <a href="service-details.html" class="primary-btn mt-20"
-                ><span class="text">Explore more</span>
-                <span class="icon"
-                  ><i class="ri-arrow-right-double-line"></i> </span
-              ></a>
-            </div>
-
-            <div class="single-service">
-              <div
-                class="d-flex justify-content-between align-items-center mb-30"
-              >
-                <div class="main-icon">
-                  <img src="assets/images/icon-12.png" alt="icon" />
-                </div>
-                <span class="number">05</span>
-              </div>
-              <h5 class="title">
-                <a href="service-details.html">Courier Services Globally </a>
-              </h5>
-              <p class="mt-10 d-none">
-                Logistic service involves of implementation and control of the
-                efficient
-              </p>
-              <a href="service-details.html" class="primary-btn mt-20"
-                ><span class="text">Explore more</span>
-                <span class="icon"
-                  ><i class="ri-arrow-right-double-line"></i> </span
-              ></a>
-            </div>
-
-            <div class="single-service">
+            <div class="service-slider mt-50">
+              <div class="single-service">
                 <div
                   class="d-flex justify-content-between align-items-center mb-30"
                 >
                   <div class="main-icon">
-                    <img src="assets/images/icon-12.png" alt="icon" />
+                    <div class="icon-container">
+                      <img src="assets/images/Mobile-Top-up.png" alt="icon" />
+                    </div>
                   </div>
-                  <span class="number">06</span>
+                  <span class="number">01</span>
                 </div>
                 <h5 class="title">
-                  <a href="service-details.html">Flight Tickets </a>
+                  <a href="service-details.html"
+                    >Mobile Top-ups & Data Bundles
+                  </a>
+                </h5>
+                <p class="mt-10 d-none">
+                  Logistic service involves of implementation and control of the
+                  efficient
+                </p>
+                <a href="service-details.html" class="primary-btn mt-20"
+                  ><span class="text">Explore more</span>
+                  <span class="icon"
+                    ><i class="ri-arrow-right-double-line"></i></span
+                ></a>
+              </div>
+
+              <div class="single-service">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-30"
+                >
+                  <div class="main-icon">
+                    <div class="icon-container">
+                      <img src="assets/images/Bill-Payment.png" alt="icon" />
+                    </div>
+                  </div>
+                  <span class="number">02</span>
+                </div>
+                <h5 class="title">
+                  <a href="service-details.html">Bills Payments</a>
+                </h5>
+                <p class="mt-10 d-none">
+                  Logistic service involves of implementation and control of the
+                  efficient
+                </p>
+                <a href="service-details.html" class="primary-btn mt-20"
+                  ><span class="text">Explore more</span>
+                  <span class="icon"
+                    ><i class="ri-arrow-right-double-line"></i></span
+                ></a>
+              </div>
+
+              <div class="single-service">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-30"
+                >
+                  <div class="main-icon">
+                    <div class="icon-container">
+                      <img src="assets/images/Gift-Card.png" alt="icon" />
+                    </div>
+                  </div>
+                  <span class="number">03</span>
+                </div>
+                <h5 class="title">
+                  <a href="service-details.html"
+                    >Branded Gift Cards & Vouchers</a
+                  >
+                </h5>
+                <p class="mt-10 d-none">
+                  Logistic service involves of implementation and control of the
+                  efficient
+                </p>
+                <a href="service-details.html" class="primary-btn mt-20"
+                  ><span class="text">Explore more</span>
+                  <span class="icon"
+                    ><i class="ri-arrow-right-double-line"></i></span
+                ></a>
+              </div>
+
+              <div class="single-service">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-30"
+                >
+                  <div class="main-icon">
+                    <div class="icon-container">
+                      <img src="assets/images/E-Voucher.png" alt="icon" />
+                    </div>
+                  </div>
+                  <span class="number">04</span>
+                </div>
+                <h5 class="title">
+                  <a href="service-details.html">Calling Cards </a>
                 </h5>
                 <p class="mt-10 d-none">
                   Logistic service involves of implementation and control of the
@@ -457,14 +457,66 @@
                   <span class="icon"
                     ><i class="ri-arrow-right-double-line"></i> </span
                 ></a>
-            </div>
+              </div>
 
-            <div class="single-service">
+              <div class="single-service">
                 <div
                   class="d-flex justify-content-between align-items-center mb-30"
                 >
                   <div class="main-icon">
-                    <img src="assets/images/icon-12.png" alt="icon" />
+                    <div class="icon-container">
+                      <img src="assets/images/icon-12.png" alt="icon" />
+                    </div>
+                  </div>
+                  <span class="number">05</span>
+                </div>
+                <h5 class="title">
+                  <a href="service-details.html">Courier Services Globally </a>
+                </h5>
+                <p class="mt-10 d-none">
+                  Logistic service involves of implementation and control of the
+                  efficient
+                </p>
+                <a href="service-details.html" class="primary-btn mt-20"
+                  ><span class="text">Explore more</span>
+                  <span class="icon"
+                    ><i class="ri-arrow-right-double-line"></i> </span
+                ></a>
+              </div>
+
+              <div class="single-service">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-30"
+                >
+                  <div class="main-icon">
+                    <div class="icon-container">
+                      <img src="assets/images/ESIM.png" alt="icon" />
+                    </div>
+                  </div>
+                  <span class="number">06</span>
+                </div>
+                <h5 class="title">
+                  <a href="service-details.html">E-sims </a>
+                </h5>
+                <p class="mt-10 d-none">
+                  Logistic service involves of implementation and control of the
+                  efficient
+                </p>
+                <a href="service-details.html" class="primary-btn mt-20"
+                  ><span class="text">Explore more</span>
+                  <span class="icon"
+                    ><i class="ri-arrow-right-double-line"></i> </span
+                ></a>
+              </div>
+
+              <div class="single-service">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-30"
+                >
+                  <div class="main-icon">
+                    <div class="icon-container">
+                      <img src="assets/images/icon-12.png" alt="icon" />
+                    </div>
                   </div>
                   <span class="number">07</span>
                 </div>
@@ -480,14 +532,16 @@
                   <span class="icon"
                     ><i class="ri-arrow-right-double-line"></i> </span
                 ></a>
-            </div>
+              </div>
 
-            <div class="single-service">
+              <div class="single-service">
                 <div
                   class="d-flex justify-content-between align-items-center mb-30"
                 >
                   <div class="main-icon">
-                    <img src="assets/images/icon-12.png" alt="icon" />
+                    <div class="icon-container">
+                      <img src="assets/images/icon-12.png" alt="icon" />
+                    </div>
                   </div>
                   <span class="number">08</span>
                 </div>
@@ -503,106 +557,123 @@
                   <span class="icon"
                     ><i class="ri-arrow-right-double-line"></i> </span
                 ></a>
-            </div>
-
-            
-          </div>
-        </div>
-
-        <div class="service-bg-card">
-          <span class="text-stroke">Fast & secure</span>
-          <img
-            src="assets/images/uae-flag.webp"
-            class="img1"
-            alt="service-bg"
-          />
-          <img src="assets/images/uae-flag.webp" alt="service-bg" />
-        </div>
-      </section>
-
-      <!-- feature area starts -->
-      <section class="feature-area pt-120 pb-100">
-        <div class="container">
-          <div class="top-content">
-            <div class="row">
-              <div class="col-lg-12">
-                <h2 class="title text-center">Safe & Secure Transactions</h2>
-                <p class="text-center mt-10">
-                  Your payments and personal information are protected with
-                  secure technology and global standards.
-                </p>
               </div>
             </div>
           </div>
 
-          <div class="feature-items">
-            <div class="row">
-              <div class="col-lg-4 col-sm-6">
-                <div class="single-feature">
-                  <div class="icon-box white-bg mb-20">
-                    <img
-                      src="assets/images/payment.png"
-                      alt="icon"
-                      class="icon"
-                    />
-                  </div>
-                  <h5 class="title">Easy Bill Payments</h5>
-                  <p class="mt-10">Pay your bills quickly in just few taps</p>
-                </div>
-              </div>
-              <div class="col-lg-4 col-sm-6">
-                <div class="single-feature">
-                  <div class="icon-box white-bg mb-20">
-                    <img
-                      src="assets/images/security.png"
-                      alt="icon"
-                      class="icon"
-                    />
-                  </div>
-                  <h5 class="title">Secure Transactions</h5>
-                  <p class="mt-10">
-                    Your Payment and personal data stay protected
-                  </p>
-                </div>
-              </div>
-              <div class="col-lg-4 col-sm-6">
-                <div class="single-feature">
-                  <div class="icon-box white-bg mb-20">
-                    <img src="assets/images/paid.png" alt="icon" class="icon" />
-                  </div>
-                  <h5 class="title">Payment Confirmed</h5>
-                  <p class="mt-10">
-                    Instant confirmation for every successful payment
+          <div class="service-bg-card">
+            <span class="text-stroke">Fast & secure</span>
+            <img
+              src="assets/images/uae-flag.webp"
+              class="img1"
+              alt="service-bg"
+            />
+            <img src="assets/images/uae-flag.webp" alt="service-bg" />
+          </div>
+        </section>
+        <section class="feature-area pt-120 pb-100">
+          <div class="container">
+            <div class="top-content">
+              <div class="row">
+                <div class="col-lg-12">
+                  <h2 class="title text-center">Safe & Secure Transactions</h2>
+                  <p class="text-center mt-10">
+                    Your payments and personal information are protected with
+                    secure technology and global standards.
                   </p>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        <div class="container-fluid px-0 d-none">
-          <div class="partner-slider-wrapper">
-            <div class="partner-slider mt-40">
-              <div class="single-slide d-flex align-items-center gap-3">
-                <img src="assets/images/icon-10.png" alt="icon" class="icon" />
-                <span class="light-text">SeaLink Transport</span>
-              </div>
-              <div class="single-slide d-flex align-items-center gap-3">
-                <img src="assets/images/icon-11.png" alt="icon" class="icon" />
-                <span class="bold-text">Track Transport</span>
-              </div>
-              <div class="single-slide d-flex align-items-center gap-3">
-                <img src="assets/images/icon-12.png" alt="icon" class="icon" />
-                <span class="light-text">Swift Logistics</span>
-              </div>
-              <div class="single-slide d-flex align-items-center gap-3">
-                <img src="assets/images/icon-13.png" alt="icon" class="icon" />
-                <span class="bold-text">sky Transport</span>
+            <div class="feature-items">
+              <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                  <div class="single-feature">
+                    <div class="icon-box white-bg mb-20">
+                      <img
+                        src="assets/images/payment.png"
+                        alt="icon"
+                        class="icon"
+                      />
+                    </div>
+                    <h5 class="title">Easy Bill Payments</h5>
+                    <p class="mt-10">Pay your bills quickly in just few taps</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <div class="single-feature">
+                    <div class="icon-box white-bg mb-20">
+                      <img
+                        src="assets/images/security.png"
+                        alt="icon"
+                        class="icon"
+                      />
+                    </div>
+                    <h5 class="title">Secure Transactions</h5>
+                    <p class="mt-10">
+                      Your Payment and personal data stay protected
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <div class="single-feature">
+                    <div class="icon-box white-bg mb-20">
+                      <img
+                        src="assets/images/paid.png"
+                        alt="icon"
+                        class="icon"
+                      />
+                    </div>
+                    <h5 class="title">Payment Confirmed</h5>
+                    <p class="mt-10">
+                      Instant confirmation for every successful payment
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+
+          <div class="container-fluid px-0 d-none">
+            <div class="partner-slider-wrapper">
+              <div class="partner-slider mt-40">
+                <div class="single-slide d-flex align-items-center gap-3">
+                  <img
+                    src="assets/images/icon-10.png"
+                    alt="icon"
+                    class="icon"
+                  />
+                  <span class="light-text">SeaLink Transport</span>
+                </div>
+                <div class="single-slide d-flex align-items-center gap-3">
+                  <img
+                    src="assets/images/icon-11.png"
+                    alt="icon"
+                    class="icon"
+                  />
+                  <span class="bold-text">Track Transport</span>
+                </div>
+                <div class="single-slide d-flex align-items-center gap-3">
+                  <img
+                    src="assets/images/icon-12.png"
+                    alt="icon"
+                    class="icon"
+                  />
+                  <span class="light-text">Swift Logistics</span>
+                </div>
+                <div class="single-slide d-flex align-items-center gap-3">
+                  <img
+                    src="assets/images/icon-13.png"
+                    alt="icon"
+                    class="icon"
+                  />
+                  <span class="bold-text">sky Transport</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
 
       <!-- counter area starts -->
       <section class="counter-area pt-120 pb-90">
@@ -618,11 +689,9 @@
                       class="icon"
                     />
                   </div>
-                 
+
                   <h5 class="title mb-3">Designed for Everyone in the UAE</h5>
-                  <h3 class="text-white">
-                    Less Apps, More Life
-                  </h3>
+                  <h3 class="text-white">Less Apps, More Life</h3>
 
                   <div class="row mt-30">
                     <div class="col-md-4 col-sm-6">
@@ -638,7 +707,7 @@
                             <h3>+</h3>
                           </div>
                         </div>
-                        <span class="title ">All services in one app</span>
+                        <span class="title">All services in one app</span>
                       </div>
                     </div>
 
@@ -655,7 +724,7 @@
                             <h3>+</h3>
                           </div>
                         </div>
-                        <span class="title ">Easy to use anytime, anywhere</span>
+                        <span class="title">Easy to use anytime, anywhere</span>
                       </div>
                     </div>
 
@@ -672,62 +741,62 @@
                             <h3>+</h3>
                           </div>
                         </div>
-                        <span class="title ">Fast and reliable platform</span>
+                        <span class="title">Fast and reliable platform</span>
                       </div>
                     </div>
 
                     <div class="col-md-4 col-sm-6">
-                        <div class="single-counter">
-                          <div class="d-none align-items-center gap-3">
-                            <img
-                              class="icon"
-                              src="assets/images/icon-16.png"
-                              alt="icon"
-                            />
-                            <div class="counter-number d-flex">
-                              <h3 class="counter">100</h3>
-                              <h3>+</h3>
-                            </div>
+                      <div class="single-counter">
+                        <div class="d-none align-items-center gap-3">
+                          <img
+                            class="icon"
+                            src="assets/images/icon-16.png"
+                            alt="icon"
+                          />
+                          <div class="counter-number d-flex">
+                            <h3 class="counter">100</h3>
+                            <h3>+</h3>
                           </div>
-                          <span class="title ">Simple, user-friendly experience</span>
                         </div>
+                        <span class="title"
+                          >Simple, user-friendly experience</span
+                        >
+                      </div>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                        <div class="single-counter">
-                          <div class="d-none align-items-center gap-3">
-                            <img
-                              class="icon"
-                              src="assets/images/icon-16.png"
-                              alt="icon"
-                            />
-                            <div class="counter-number d-flex">
-                              <h3 class="counter">100</h3>
-                              <h3>+</h3>
-                            </div>
+                      <div class="single-counter">
+                        <div class="d-none align-items-center gap-3">
+                          <img
+                            class="icon"
+                            src="assets/images/icon-16.png"
+                            alt="icon"
+                          />
+                          <div class="counter-number d-flex">
+                            <h3 class="counter">100</h3>
+                            <h3>+</h3>
                           </div>
-                          <span class="title ">Access services instantly
-                        </span>
                         </div>
+                        <span class="title">Access services instantly </span>
+                      </div>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                        <div class="single-counter">
-                          <div class="d-none align-items-center gap-3">
-                            <img
-                              class="icon"
-                              src="assets/images/icon-16.png"
-                              alt="icon"
-                            />
-                            <div class="counter-number d-flex">
-                              <h3 class="counter">100</h3>
-                              <h3>+</h3>
-                            </div>
+                      <div class="single-counter">
+                        <div class="d-none align-items-center gap-3">
+                          <img
+                            class="icon"
+                            src="assets/images/icon-16.png"
+                            alt="icon"
+                          />
+                          <div class="counter-number d-flex">
+                            <h3 class="counter">100</h3>
+                            <h3>+</h3>
                           </div>
-                          <span class="title ">Easy and secure bill payments
-
-                        </span>
                         </div>
+                        <span class="title"
+                          >Easy and secure bill payments
+                        </span>
+                      </div>
                     </div>
-
                   </div>
                 </div>
               </div>
@@ -752,17 +821,18 @@
                   </div>
                   <h5 class="title">Everything You Need to Support Home</h5>
                   <p class="mt-20">
-                    Fast, secure, and simple services designed for residents, professionals, families, and visitors across the UAE.
+                    Fast, secure, and simple services designed for residents,
+                    professionals, families, and visitors across the UAE.
                   </p>
                 </div>
               </div>
               <div class="col-lg-6 wow fadeInRight" data-wow-delay=".2s">
                 <div class="single-card dark-bg mb-30">
-                  <h5 class="title">
-                    Distance Shouldn’t Make Life Difficult
-                  </h5>
+                  <h5 class="title">Distance Shouldn’t Make Life Difficult</h5>
                   <p class="mt-20">
-                    Whether it's paying a bill, sending mobile credit, or helping family in an emergency, do it instantly from your phone.
+                    Whether it's paying a bill, sending mobile credit, or
+                    helping family in an emergency, do it instantly from your
+                    phone.
                   </p>
                   <ul class="check-list mt-30 d-none">
                     <li>
@@ -785,67 +855,68 @@
         </div>
       </section>
 
-
       <section class="superapp-section">
         <div class="container">
-        
-            <!-- Title -->
-            <h2 class="section-title text-center mb-5">
-                One app multiple services - We call it Super App.
-            </h2>
-            <div class="title-line"></div>
-        
-            <div class="row align-items-center">
-        
-                <!-- Image -->
-                <div class="col-lg-6 text-center">
-                    <!-- Replace image path with your file -->
-                    <img src="/assets/images//banner-new.png" 
-                         alt="Super App" 
-                         class="phone-image img-fluid">
-                </div>
-        
-                <!-- Content -->
-                <div class="col-lg-6 content-area">
-        
-                    <div class="step mb-4">
-                        <p class="step-title">1. Create account</p>
-                        <p>
-                            Simply register and provide your basic information
-                            to create your personal account and access the
-                            app's features.
-                        </p>
-                    </div>
-        
-                    <div class="step mb-4">
-                        <p class="step-title">2. Complete verification</p>
-                        <p>
-                            Verify your account through a secure process to
-                            ensure your identity and protect your data from
-                            potential fraud or misuse.
-                        </p>
-                    </div>
-        
-                    <div class="step mb-4">
-                        <p class="step-title">3. Start using the app instantly</p>
-                        <p>
-                            Once verified, start using the app's features
-                            immediately with no waiting time or delays.
-                        </p>
-                    </div>
-        
-                    <!-- Store Buttons -->
-                    <div class="store-btn d-flex align-items-center mt-4">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" class="w-25" alt="">
-                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"  class="w-25 ms-3" alt="">
-                    </div>
-        
-                </div>
-        
+          <!-- Title -->
+          <h2 class="section-title text-center mb-5">
+            One app multiple services - We call it Super App.
+          </h2>
+          <div class="title-line"></div>
+
+          <div class="row align-items-center">
+            <!-- Image -->
+            <div class="col-lg-6 text-center">
+              <!-- Replace image path with your file -->
+              <img
+                src="/assets/images//banner-new.png"
+                alt="Super App"
+                class="phone-image img-fluid"
+              />
             </div>
-        
+
+            <!-- Content -->
+            <div class="col-lg-6 content-area">
+              <div class="step mb-4">
+                <p class="step-title">1. Create account</p>
+                <p>
+                  Simply register and provide your basic information to create
+                  your personal account and access the app's features.
+                </p>
+              </div>
+
+              <div class="step mb-4">
+                <p class="step-title">2. Complete verification</p>
+                <p>
+                  Verify your account through a secure process to ensure your
+                  identity and protect your data from potential fraud or misuse.
+                </p>
+              </div>
+
+              <div class="step mb-4">
+                <p class="step-title">3. Start using the app instantly</p>
+                <p>
+                  Once verified, start using the app's features immediately with
+                  no waiting time or delays.
+                </p>
+              </div>
+
+              <!-- Store Buttons -->
+              <div class="store-btn d-flex align-items-center mt-4">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                  class="w-25"
+                  alt=""
+                />
+                <img
+                  src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                  class="w-25 ms-3"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
         </div>
-        </section>
+      </section>
 
       <!-- faq area starts -->
       <section class="faq-area">
@@ -855,76 +926,64 @@
               <div class="faq-content">
                 <div class="section-top">
                   <!-- <span class="sub-title third-color">Ask Question</span> -->
-                  <h2 class="title white-color">
-                    Frequently Asked Questions
-
-                  </h2>
+                  <h2 class="title white-color">Frequently Asked Questions</h2>
                 </div>
 
                 <div class="accordion-area mt-40">
                   <div class="accordion-item active">
                     <div class="accordion-header">
-                      <h6 class="title">
-                        01 Is Happyy available worldwide?
-                      </h6>
+                      <h6 class="title">01 Is Happyy available worldwide?</h6>
+                      <span class="icon"
+                        ><i class="ri-arrow-down-s-line"></i
+                      ></span>
+                    </div>
+                    <div class="accordion-content">
+                      <p>Yes! You can use mWALLETplus from anywhere.</p>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <div class="accordion-header">
+                      <h6 class="title">02 Are there any hidden charges?</h6>
                       <span class="icon"
                         ><i class="ri-arrow-down-s-line"></i
                       ></span>
                     </div>
                     <div class="accordion-content">
                       <p>
-                        Yes! You can use mWALLETplus from anywhere.
+                        No hidden fees! We show you the full price upfront,
+                        including any transaction fees before you pay.
                       </p>
                     </div>
                   </div>
 
                   <div class="accordion-item">
                     <div class="accordion-header">
-                      <h6 class="title">
-                        02 Are there any hidden charges?
-                      </h6>
+                      <h6 class="title">03 Is my data safe?</h6>
                       <span class="icon"
                         ><i class="ri-arrow-down-s-line"></i
                       ></span>
                     </div>
                     <div class="accordion-content">
                       <p>
-                        No hidden fees! We show you the full price upfront, including any transaction fees before you pay.
+                        Yes. We use end-to-end encryption and secure payment
+                        gateways to protect your personal and financial
+                        information.
                       </p>
                     </div>
                   </div>
 
                   <div class="accordion-item">
                     <div class="accordion-header">
-                      <h6 class="title">
-                        03 Is my data safe?
-                      </h6>
+                      <h6 class="title">04 How can I contact support?</h6>
                       <span class="icon"
                         ><i class="ri-arrow-down-s-line"></i
                       ></span>
                     </div>
                     <div class="accordion-content">
                       <p>
-                        Yes. We use end-to-end encryption and secure payment gateways to protect your
-									personal and financial information.
-
-                      </p>
-                    </div>
-                  </div>
-
-
-                  <div class="accordion-item">
-                    <div class="accordion-header">
-                      <h6 class="title">
-                        04 How can I contact support?
-                      </h6>
-                      <span class="icon"
-                        ><i class="ri-arrow-down-s-line"></i
-                      ></span>
-                    </div>
-                    <div class="accordion-content">
-                      <p>
-                        You can reach us directly through the support section in the app, or email us at <strong>care@happyy.ae</strong>
+                        You can reach us directly through the support section in
+                        the app, or email us at <strong>care@happyy.ae</strong>
                       </p>
                     </div>
                   </div>
@@ -940,8 +999,8 @@
                     </div>
                     <div class="accordion-content">
                       <p>
-                        We accept debit/credit cards (Visa, MasterCard, etc.) and local payment methods (in
-									supported regions).
+                        We accept debit/credit cards (Visa, MasterCard, etc.)
+                        and local payment methods (in supported regions).
                       </p>
                     </div>
                   </div>
@@ -957,13 +1016,13 @@
                     </div>
                     <div class="accordion-content">
                       <p>
-                        No, we do not share your personal information with third parties. Your privacy is
-									extremely important to us, and we are committed to protecting your data in
-									accordance with industry standards and best practices.
+                        No, we do not share your personal information with third
+                        parties. Your privacy is extremely important to us, and
+                        we are committed to protecting your data in accordance
+                        with industry standards and best practices.
                       </p>
                     </div>
                   </div>
-
 
                   <div class="accordion-item">
                     <div class="accordion-header">
@@ -976,8 +1035,10 @@
                     </div>
                     <div class="accordion-content">
                       <p>
-                        Yes, your payment information is fully secure. We use trusted and encrypted payment
-									gateways to ensure that all transactions are processed safely and confidentially.
+                        Yes, your payment information is fully secure. We use
+                        trusted and encrypted payment gateways to ensure that
+                        all transactions are processed safely and
+                        confidentially.
                       </p>
                     </div>
                   </div>
@@ -994,79 +1055,112 @@
         </div>
       </section>
 
-  
       <section class="contact-section">
         <div class="container">
-      
           <!-- Heading -->
           <div class="text-center mb-5">
             <h2 class="section-title">Connect <span>Us</span></h2>
             <p class="section-desc mt-3">
-              Have a question? Fill out the form below and our team will get back to you shortly.
+              Have a question? Fill out the form below and our team will get
+              back to you shortly.
             </p>
           </div>
-      
+
           <!-- Form -->
           <div class="row justify-content-center">
             <div class="col-lg-8">
               <div class="form-card mb-5">
-      
                 <form id="contactForm">
                   <div class="row g-4">
-      
                     <!-- Name -->
                     <div class="col-md-6">
                       <label class="form-label">Name</label>
-                      <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                      <input
+                        type="text"
+                        name="name"
+                        class="form-control"
+                        placeholder="Your Name"
+                        required
+                      />
                     </div>
-      
+
                     <!-- Email -->
                     <div class="col-md-6">
                       <label class="form-label">Email Address</label>
-                      <input type="email" name="email" class="form-control" placeholder="you@example.com" required>
+                      <input
+                        type="email"
+                        name="email"
+                        class="form-control"
+                        placeholder="you@example.com"
+                        required
+                      />
                     </div>
-      
+
                     <!-- Phone -->
                     <div class="col-md-6">
                       <label class="form-label">Phone Number</label>
-                      <input type="tel" name="phone" class="form-control" placeholder="+971 XXXXXXXXXX" required>
+                      <input
+                        type="tel"
+                        name="phone"
+                        class="form-control"
+                        placeholder="+971 XXXXXXXXXX"
+                        required
+                      />
                     </div>
-      
+
                     <!-- Business Name -->
                     <div class="col-md-6">
                       <label class="form-label">Business Name</label>
-                      <input type="text" name="business" class="form-control" placeholder="Your Shop Name" required>
+                      <input
+                        type="text"
+                        name="business"
+                        class="form-control"
+                        placeholder="Your Shop Name"
+                        required
+                      />
                     </div>
-      
+
                     <!-- Address -->
                     <div class="col-12">
                       <label class="form-label">Address</label>
-                      <input type="text" name="address" class="form-control" placeholder="Full Address" required>
+                      <input
+                        type="text"
+                        name="address"
+                        class="form-control"
+                        placeholder="Full Address"
+                        required
+                      />
                     </div>
-      
+
                     <!-- Message -->
                     <div class="col-12">
                       <label class="form-label">Message</label>
-                      <textarea name="message" class="form-control" placeholder="Write your message here..." rows="5" maxlength="250" required></textarea>
+                      <textarea
+                        name="message"
+                        class="form-control"
+                        placeholder="Write your message here..."
+                        rows="5"
+                        maxlength="250"
+                        required
+                      ></textarea>
                     </div>
-      
+
                     <!-- Submit -->
                     <button type="submit" class="btn btn-submit" id="submitBtn">
-                        <span class="btn-text">Send Message</span>
-                        <span class="spinner-border spinner-border-sm d-none" id="btnSpinner"></span>
+                      <span class="btn-text">Send Message</span>
+                      <span
+                        class="spinner-border spinner-border-sm d-none"
+                        id="btnSpinner"
+                      ></span>
                     </button>
-      
                   </div>
                 </form>
                 <div id="formMessage" class="alert d-none mt-3"></div>
-      
               </div>
             </div>
           </div>
-      
         </div>
       </section>
-      
     </main>
 
     <!-- footer area starts -->
@@ -1208,9 +1302,7 @@
               <div class="col-lg-6">
                 <div class="copyright-text">
                   <span
-                    >Copyright &copy; 2026
-                    Happyy
-                    . All rights reserved.</span
+                    >Copyright &copy; 2026 Happyy . All rights reserved.</span
                   >
                 </div>
               </div>
@@ -1228,31 +1320,109 @@
     </footer>
 
     <script>
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("contactForm");
+      document.addEventListener("DOMContentLoaded", () => {
+        const form = document.getElementById("contactForm");
 
-  form.addEventListener("submit", async function (e) {
-    e.preventDefault();
+        form.addEventListener("submit", async function (e) {
+          e.preventDefault();
 
-    const formData = Object.fromEntries(
-      new FormData(form).entries()
-    );
+          const formData = Object.fromEntries(new FormData(form).entries());
 
-    try {
-      await fetch("http://localhost:3000/submit", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData)
+          try {
+            await fetch("http://localhost:3000/submit", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(formData),
+            });
+
+            alert("Verification email sent!");
+            form.reset();
+          } catch (err) {
+            alert("Server error. Is backend running?");
+          }
+        });
       });
+    </script>
 
-      alert("Verification email sent!");
-      form.reset();
-    } catch (err) {
-      alert("Server error. Is backend running?");
-    }
-  });
-});
-</script>
+    <!-- <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      let steps = gsap.utils.toArray(".content-step");
+
+      function setActiveStep(index) {
+        steps.forEach((step, i) => {
+          step.classList.toggle("active", i === index);
+
+          gsap.to(step, {
+            autoAlpha: i === index ? 1 : 0,
+            y: i === index ? 0 : 30,
+            duration: 0.3,
+          });
+        });
+      }
+
+      setActiveStep(0);
+
+      ScrollTrigger.create({
+        trigger: ".premium-section",
+        start: "top top",
+        end: "+=2000",
+        pin: true,
+        scrub: 1,
+        onUpdate: (self) => {
+          let index = Math.min(
+            steps.length - 1,
+            Math.floor(self.progress * steps.length)
+          );
+
+          setActiveStep(index);
+        },
+      });
+    </script> -->
+
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      let steps = gsap.utils.toArray(".content-step");
+      let screens = gsap.utils.toArray(".app-screen");
+
+      function setActiveStep(index) {
+        steps.forEach((step, i) => {
+          step.classList.toggle("active", i === index);
+          gsap.to(step, {
+            autoAlpha: i === index ? 1 : 0,
+            y: i === index ? 0 : 30,
+            duration: 0.3,
+          });
+        });
+
+        screens.forEach((screen, i) => {
+          screen.classList.toggle("active", i === index);
+          gsap.to(screen, {
+            autoAlpha: i === index ? 1 : 0,
+            scale: i === index ? 1 : 0.95,
+            duration: 0.4,
+          });
+        });
+      }
+
+      setActiveStep(0);
+
+      ScrollTrigger.create({
+        trigger: ".premium-section",
+        start: "top top",
+        end: "+=2000",
+        pin: true,
+        scrub: 1,
+        onUpdate: (self) => {
+          let index = Math.min(
+            steps.length - 1,
+            Math.floor(self.progress * steps.length)
+          );
+          setActiveStep(index);
+        },
+      });
+    </script>
 
     <!-- javascript files -->
     <script src="assets/js/jquery-3.7.1.min.js"></script>

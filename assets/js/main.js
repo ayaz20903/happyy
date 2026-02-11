@@ -305,5 +305,16 @@
           
     // });
 
+    $(window).on("scroll", function () {
+        var windowHeight = $(window).height();
+      
+        $(".reveal-from-bottom").each(function () {
+          var elementTop = this.getBoundingClientRect().top;
+      
+          if (elementTop < windowHeight - 100) {
+            $(this).addClass("active");
+          }
+        });
+      });
 
 })(jQuery);
