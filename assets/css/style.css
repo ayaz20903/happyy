@@ -2534,6 +2534,8 @@ img {
   background-color: #24434d;
   border-radius: 20px;
   padding: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -2549,8 +2551,12 @@ img {
 }
 
 .counter-area .top-part h5.title {
-  color: #ffffff;
+  color: #22404a;
   width: 65%;
+}
+
+.counter-content h3 {
+  color: #254753 !important;
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -2608,7 +2614,7 @@ img {
 
 .single-counter {
   padding: 20px;
-  border: 1px solid #cccccc;
+  border: 1px solid #254753;
   border-radius: 20px;
   margin-bottom: 30px;
 }
@@ -2628,7 +2634,7 @@ img {
 }
 
 .single-counter .title {
-  color: #ffffff;
+  color: #274753;
   display: inline-block;
   text-transform: capitalize;
   font-size: 18px;
@@ -2664,8 +2670,14 @@ img {
 
 .single-card {
   padding: 40px;
-  background-color: #f5f5f5;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
   border-radius: 20px;
+}
+
+.single-card .title,
+.single-card p {
+  color: #264853;
 }
 
 @media (max-width: 575.98px) {
@@ -3428,9 +3440,29 @@ img {
   }
 }
 
+.superapp-section {
+  padding-bottom: 80px;
+}
+
+.superapp-section .section-title,
+.superapp-section p {
+  color: #264953;
+}
+
+.superapp-section .content-area {
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+
+.contact-section .section-title,
+.contact-section .section-desc {
+  color: #264953;
+}
 .faq-area {
   padding: 80px 0;
-  margin: 80px 0;
+  /* margin: 80px 0; */
   background: #1a2a38;
 }
 
@@ -4508,9 +4540,9 @@ textarea.form-control {
   .section-title {
     font-size: 36px;
   }
-  .form-card {
+  /* .form-card {
     padding: 25px;
-  }
+  } */
 }
 
 input:-internal-autofill-selected {
