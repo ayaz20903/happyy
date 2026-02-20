@@ -223,8 +223,8 @@
         new WOW().init();
 
         // preloader
-        var preLoder = $("#preloader");
-        preLoder.fadeOut(0);
+        // var preLoder = $("#preloader");
+        // preLoder.fadeOut(0);
 
         // back to top animate
         $(".back-to-top").on('click', function () {
@@ -233,6 +233,15 @@
             }, 1000);
         });
 
+    });
+
+
+    // $(document).ready(function () {
+    //     $("#preloader").fadeOut(300);
+    // });
+
+    $(function () {
+        $("#preloader").fadeOut(300);
     });
 
     // $(document).ready(function () {

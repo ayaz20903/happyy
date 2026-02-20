@@ -3494,6 +3494,18 @@ img {
   .form-card {
     padding: 10px;
   }
+  .hero-area .hero-image {
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .content-step .section-top .title {
+    font-size: 30px;
+  }
+  .content-step .section-top h2 {
+    font-size: 43px;
+  }
 }
 
 @media (max-width: 991.98px) {

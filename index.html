@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- required meta tags -->
@@ -274,15 +274,15 @@
       <!-- <div class="premium-section"> -->
       <section class="about-area py-120 premium-section" id="about">
         <div class="container">
-          <div class="row gx-xl-5 align-items-center">
+          <div class="row gx-xl-5 align-items-center mx-auto">
             <div class="col-lg-7 wow fadeInLeft" data-wow-delay=".2s">
               <div class="about-images">
                 <img
-                  src="assets/images/screen1.png"
+                  src="assets/images/about-screen1.png"
                   class="app-screen active"
                 />
-                <img src="assets/images/screen2.png" class="app-screen" />
-                <img src="assets/images/screen1.png" class="app-screen" />
+                <img src="assets/images/about-screen2.png" class="app-screen" />
+                <img src="assets/images/about-screen3.png" class="app-screen" />
               </div>
             </div>
 
@@ -291,14 +291,14 @@
                 <div class="content-step step active">
                   <div class="section-top">
                     <h3 class="title mt-10">Everything You Need,</h3>
-                    <h1>One App Away.</h1>
+                    <h2>One App Away.</h2>
                   </div>
                 </div>
 
                 <div class="content-step step">
                   <div class="section-top">
                     <h3 class="title mt-10">Everything You Need,</h3>
-                    <h1>One App Away.</h1>
+                    <h2>One App Away.</h2>
 
                     <p class="mt-20 text-black">
                       Our Super App brings together essential digital services
@@ -312,7 +312,7 @@
                 <div class="content-step step">
                   <div class="section-top">
                     <h3 class="title mt-10">Everything You Need,</h3>
-                    <h1>One App Away.</h1>
+                    <h2>One App Away.</h2>
                   </div>
                   <p class="mt-20">
                     Our Super App brings together essential digital services in
@@ -876,7 +876,7 @@
               <div class="col-lg-6 text-center">
                 <!-- Replace image path with your file -->
                 <img
-                  src="/assets/images//banner-new.png"
+                  src="/assets/images/create-account-img.png"
                   alt="Super App"
                   class="phone-image img-fluid"
                 />
@@ -1427,7 +1427,7 @@
         onUpdate: (self) => {
           let index = Math.min(
             steps.length - 1,
-            Math.floor(self.progress * steps.length)
+            Math.floor(self.progress * steps.length),
           );
           setActiveStep(index);
         },
