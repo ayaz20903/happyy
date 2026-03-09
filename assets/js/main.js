@@ -244,75 +244,25 @@
         $("#preloader").fadeOut(300);
     });
 
-    // $(document).ready(function () {
-    //     $("#contactForm").on("submit", function (e) {
-    //         e.preventDefault();
-          
-    //         let form = $(this);
-    //         let formData = {};
-    //         let valid = true;
-          
-    //         $("#formMessage").addClass("d-none");
-          
-    //         // Collect data + validation
-    //         form.find("input, textarea").each(function () {
-    //           let name = $(this).attr("name");
-    //           let value = $(this).val().trim();
-          
-    //           formData[name] = value;
-          
-    //           if (!value) {
-    //             $(this).addClass("is-invalid");
-    //             valid = false;
-    //           } else {
-    //             $(this).removeClass("is-invalid");
-    //           }
-    //         });
-          
-    //         if (!valid) {
-    //           $("#formMessage")
-    //             .removeClass("d-none alert-success")
-    //             .addClass("alert-danger")
-    //             .text("Please fill all required fields.");
-    //           return;
-    //         }
-          
-    //         // Disable button + spinner
-    //         $("#submitBtn").prop("disabled", true);
-    //         $("#btnSpinner").removeClass("d-none");
-    //         $(".btn-text").text("Sending...");
-          
-    //         $.ajax({
-    //           url: "/submit-form",
-    //           method: "POST",
-    //           contentType: "application/json",
-    //           data: JSON.stringify(formData),
-          
-    //           success: function () {
-    //             $("#formMessage")
-    //               .removeClass("d-none alert-danger")
-    //               .addClass("alert-success")
-    //               .text("Submission successful! Check your email to confirm.");
-          
-    //             form[0].reset();
-    //           },
-          
-    //           error: function () {
-    //             $("#formMessage")
-    //               .removeClass("d-none alert-success")
-    //               .addClass("alert-danger")
-    //               .text("Something went wrong. Try again.");
-    //           },
-          
-    //           complete: function () {
-    //             $("#submitBtn").prop("disabled", false);
-    //             $("#btnSpinner").addClass("d-none");
-    //             $(".btn-text").text("Send Message");
-    //           }
-    //         });
-    //       });
-          
-    // });
+    $('.screens-slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        arrows: false,
+        dots: true,
+        centerMode: true,
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: { slidesToShow: 2 }
+          },
+          {
+            breakpoint: 768,
+            settings: { slidesToShow: 1 }
+          }
+        ]
+      });
 
     $(window).on("scroll", function () {
         var windowHeight = $(window).height();
