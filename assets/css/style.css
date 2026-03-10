@@ -2437,7 +2437,7 @@ img {
 }
 
 .feature-area {
-  /* background-color: #1b262f; */
+  background-color: #1a2a38;
 }
 
 .feature-area .top-content img {
@@ -5153,7 +5153,6 @@ input:-internal-autofill-selected {
 }
 
 .designed-section {
-  padding: 0px;
   text-align: center;
   background: #1a2a38;
 }
