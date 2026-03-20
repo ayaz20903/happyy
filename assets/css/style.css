@@ -5156,3 +5156,7 @@ input:-internal-autofill-selected {
   text-align: center;
   background: #1a2a38;
 }
+
+.content .email {
+  text-transform: lowercase;
+}
